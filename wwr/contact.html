@@ -10,122 +10,110 @@
 </head>
 
 <body>
+  <header class="site-header">
+    <img class="logo" src="images/logo.jpeg" alt="White Water Rafting logo">
 
-<header class="site-header">
-  <img class="logo" src="images/logo.jpeg" alt="White Water Rafting logo">
+    <nav class="site-nav" aria-label="Main navigation">
+      <!-- Must be exactly index.html for the course checker -->
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a class="active" href="contact.html">Contact Us</a>
+    </nav>
+  </header>
 
-  <nav class="site-nav">
-    <a href="../index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="trips.html">Trips</a>
-    <a class="active" href="contact.html">Contact Us</a>
-  </nav>
-</header>
+  <main>
+    <!-- CONTACT INFORMATION -->
+    <section class="contact-info">
+      <!-- H1 must include company name -->
+      <h1>Contact White Water Rafting</h1>
 
-<main>
+      <p><strong>Address:</strong> 123 Zambezi River Road, Victoria Falls, Zimbabwe</p>
+      <p><strong>Phone:</strong> +263 77 123 4567</p>
+      <p><strong>Email:</strong> info@whitewaterrafting.com</p>
 
-<!-- CONTACT INFORMATION -->
-<section class="contact-info">
-  <h1>Contact Us</h1>
+      <!-- No inline style="border:0" -->
+      <iframe
+        src="https://www.google.com/maps?q=Victoria%20Falls%20Zimbabwe&output=embed"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </section>
 
-  <p><strong>Address:</strong> 123 Zambezi River Road, Victoria Falls, Zimbabwe</p>
-  <p><strong>Phone:</strong> +263 77 123 4567</p>
-  <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+    <!-- EMPLOYEE PROFILES -->
+    <section class="employees">
+      <h2>We Are Here to Serve You</h2>
 
-  <iframe
-    src="https://www.google.com/maps?q=Victoria%20Falls%20Zimbabwe&output=embed"
-    loading="lazy"
-    allowfullscreen>
-  </iframe>
-</section>
+      <div class="employee-row">
+        <figure>
+          <!-- Keep files <= 125KB (recommended: .jpg) -->
+          <img src="images/employee1.jpg" alt="John Moyo">
+          <figcaption>John Moyo – Lead River Guide</figcaption>
+        </figure>
 
+        <figure>
+          <img src="images/employee2.jpg" alt="Sarah Dube">
+          <figcaption>Sarah Dube – Reservations Manager</figcaption>
+        </figure>
 
-<!-- EMPLOYEE PROFILES -->
-<section class="employees">
-  <h2>We Are Here to Serve You</h2>
+        <figure>
+          <img src="images/employee3.jpg" alt="David Ncube">
+          <figcaption>David Ncube – Safety Officer</figcaption>
+        </figure>
+      </div>
+    </section>
 
-  <div class="employee-row">
+    <!-- CONTACT FORM -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
 
-    <figure>
-      <img src="images/employee1.png" alt="John Moyo">
-      <figcaption>John Moyo – Lead River Guide</figcaption>
-    </figure>
+      <!-- exactly one form in main -->
+      <form action="#" method="post">
+        <!-- name + id + label association -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <figure>
-      <img src="images/employee2.png" alt="Sarah Dube">
-      <figcaption>Sarah Dube – Reservations Manager</figcaption>
-    </figure>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
 
-    <figure>
-      <img src="images/employee3.png" alt="David Ncube">
-      <figcaption>David Ncube – Safety Officer</figcaption>
-    </figure>
+        <fieldset>
+          <legend>Purpose of Message</legend>
 
-  </div>
-</section>
+          <input type="radio" id="purpose-general" name="purpose" value="General Inquiry" required>
+          <label for="purpose-general">General Inquiry</label>
 
+          <input type="radio" id="purpose-reservation" name="purpose" value="Reservation Question">
+          <label for="purpose-reservation">Reservation Question</label>
 
-<!-- CONTACT FORM -->
-<section class="contact-form">
-  <h2>Send Us a Message</h2>
+          <input type="radio" id="purpose-website" name="purpose" value="Website Suggestion">
+          <label for="purpose-website">Website Suggestion</label>
+        </fieldset>
 
-  <form>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-    <label for="name">Full Name:</label>
-    <input type="text" id="name" name="name" required>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
 
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" required>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
 
-    <fieldset>
-      <legend>Purpose of Message</legend>
+  <footer class="site-footer">
+    <p>&copy; 2026 White Water Rafting | Tafadzwa Kahwai</p>
 
-      <label>
-        <input type="radio" name="purpose" value="General Inquiry" required>
-        General Inquiry
-      </label>
-
-      <label>
-        <input type="radio" name="purpose" value="Reservation Question">
-        Reservation Question
-      </label>
-
-      <label>
-        <input type="radio" name="purpose" value="Website Suggestion">
-        Website Suggestion
-      </label>
-    </fieldset>
-
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-    <label class="checkbox">
-      <input type="checkbox" name="subscribe">
-      Please subscribe me to the monthly newsletter
-    </label>
-
-    <button type="submit" class="submit-btn">Send Message</button>
-
-  </form>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <p>&copy; 2026 White Water Rafting | Tafadzwa Kahwai</p>
-
-  <nav class="socialmedia">
-    <a href="https://facebook.com">
-      <img src="images/facebook.svg" alt="Facebook">
-    </a>
-    <a href="https://x.com">
-      <img src="images/x-bw.svg" alt="X">
-    </a>
-    <a href="https://instagram.com">
-      <img src="images/instagram.svg" alt="Instagram">
-    </a>
-  </nav>
-</footer>
-
+    <nav class="socialmedia" aria-label="Social media">
+      <a href="https://facebook.com" aria-label="Facebook">
+        <img src="images/facebook.svg" alt="Facebook icon">
+      </a>
+      <a href="https://x.com" aria-label="X">
+        <img src="images/x-bw.svg" alt="X icon">
+      </a>
+      <a href="https://instagram.com" aria-label="Instagram">
+        <img src="images/instagram.svg" alt="Instagram icon">
+      </a>
+    </nav>
+  </footer>
 </body>
 </html>
