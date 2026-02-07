@@ -321,3 +321,9 @@ fieldset {
 .submit-btn:hover {
   opacity: 0.85;
 }
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
