@@ -6,7 +6,7 @@
   <title>About Us | White Water Rafting</title>
   <meta name="description" content="Learn about our rafting company, our history, and our adventures." />
   <meta name="author" content="Your Name" />
-  <link rel="stylesheet" href="../styles/rafting.css" />
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
   <header class="site-header">
@@ -22,10 +22,11 @@
 
   <main>
     <!-- HERO / INTRO -->
-    <section class="hero">
+    <div class="hero">
+      <img class="sr-only" src="../images/rafting27_1024.jpg" alt="Rafting team navigating powerful rapids" />
       <h1>White Water Rafting</h1>
 
-      <div class="hero-content">
+      <article class="hero-content">
         <p>
           Join us for guided whitewater trips that balance exhilarating rapids with
           industry-leading safety. Our experienced guides, modern equipment, and
@@ -34,8 +35,8 @@
         </p>
 
         <img src="../images/rafting27_1024.jpg" alt="Rafting team navigating powerful rapids" />
-      </div>
-    </section>
+      </article>
+    </div>
 
     <!-- HISTORY -->
     <section class="history">
@@ -93,17 +94,17 @@
   <footer class="site-footer">
     <p>&copy; 2026 White Water Rafting | Tafadzwa Kahwai</p>
 
-    <div class="social">
+    <nav class="socialmedia" aria-label="Social media">
       <a href="https://facebook.com" aria-label="Facebook">
-        <img src="../images/facebook.svg" alt="" />
+        <img src="../images/facebook.svg" alt="Facebook" />
       </a>
-      <a href="https://twitter.com" aria-label="Twitter">
-        <img src="../images/x-bw.svg" alt="" />
+      <a href="https://x.com" aria-label="X">
+        <img src="../images/x-bw.svg" alt="X" />
       </a>
       <a href="https://instagram.com" aria-label="Instagram">
-        <img src="../images/instagram.svg" alt="" />
+        <img src="../images/instagram.svg" alt="Instagram" />
       </a>
-    </div>
+    </nav>
   </footer>
 </body>
 </html>
