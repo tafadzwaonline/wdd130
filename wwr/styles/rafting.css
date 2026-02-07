@@ -232,3 +232,92 @@ main {
     margin: 0 auto 12px;
   }
 }
+/* CONTACT PAGE */
+
+.contact-info {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+.contact-info iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin-top: 10px;
+}
+
+/* EMPLOYEE PROFILES */
+
+.employees {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+.employees h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.employee-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.employee-row figure {
+  width: 32%;
+  text-align: center;
+}
+
+.employee-row img {
+  width: 100%;
+  height: auto;
+}
+
+/* FORM */
+
+.contact-form {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+fieldset {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.checkbox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.submit-btn {
+  background: #396e9c;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  opacity: 0.85;
+}
