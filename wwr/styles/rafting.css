@@ -332,6 +332,9 @@ fieldset {
   margin-top: 16px;
   position: relative;
   border: 1px solid var(--border);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 .home-hero img {
